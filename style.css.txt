@@ -1,0 +1,133 @@
+/* Fonte e reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: url('/imagens/idosos.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header com efeito de transparência */
+header {
+    background-color: rgba(46, 134, 193, 0.85); /* azul com transparência */
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid #1B4F72;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: rgba(27, 79, 114, 0.9);
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700; /* amarelo dourado ao passar o mouse */
+    transform: scale(1.1);
+}
+
+/* Seções com fundo semi-transparente */
+section {
+    background-color: rgba(0, 0, 0, 0.5); /* preto com transparência */
+    padding: 40px 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    width: 80%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Títulos das seções */
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #FFD700;
+}
+
+/* Listas */
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Botões e formulários */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #2E86C1;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #1B4F72;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(27, 79, 114, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #FFD700;
+}
+
+/* Links no footer */
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}

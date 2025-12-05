@@ -1,4 +1,4 @@
-/* Fonte e reset básico */
+/* Fonte e reset básico *//* Reset e fonte */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,123 +11,159 @@ body {
     color: #fff;
     background: url('/imagens/idosos.jpg') no-repeat center center fixed;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 
-/* Header com efeito de transparência */
+/* Header com menu fixo */
 header {
-    background-color: rgba(46, 134, 193, 0.85); /* azul com transparência */
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 3px solid #1B4F72;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(46, 134, 193, 0.95);
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 header h1 {
-    font-size: 2.5em;
+    text-align: center;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 /* Menu de navegação */
 nav {
-    background-color: rgba(27, 79, 114, 0.9);
-    text-align: center;
-    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
     font-weight: bold;
     font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #FFD700; /* amarelo dourado ao passar o mouse */
+    background-color: #FFD700;
+    color: #1B4F72;
     transform: scale(1.1);
 }
 
-/* Seções com fundo semi-transparente */
+/* Espaço para o conteúdo não ficar escondido pelo header fixo */
+main {
+    padding-top: 150px;
+}
+
+/* Seções com destaque e animação */
 section {
-    background-color: rgba(0, 0, 0, 0.5); /* preto com transparência */
-    padding: 40px 30px;
-    margin: 30px auto;
-    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 30px;
+    margin: 40px auto;
     width: 80%;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Animação suave para as seções */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Títulos das seções */
 section h2 {
+    font-size: 2.2em;
     margin-bottom: 20px;
-    font-size: 2em;
     color: #FFD700;
+    text-align: center;
 }
 
-/* Listas */
+/* Listas e textos */
 section ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
 section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 1.1em;
 }
 
 /* Botões e formulários */
 form input, form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin: 10px 0;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 button {
-    padding: 12px 25px;
+    padding: 14px 30px;
     background-color: #2E86C1;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
 button:hover {
     background-color: #1B4F72;
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: rgba(27, 79, 114, 0.9);
+    background-color: rgba(27, 79, 114, 0.95);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     border-top: 3px solid #FFD700;
+    margin-top: 50px;
 }
 
-/* Links no footer */
 footer a {
     color: #FFD700;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsividade básica */
+/* Responsividade */
 @media (max-width: 768px) {
     section {
         width: 90%;
-        padding: 30px 20px;
+        padding: 40px 20px;
+    }
+
+    nav {
+        flex-direction: column;
     }
 
     nav a {
-        display: block;
-        margin: 10px 0;
+        margin: 8px 0;
+    }
+
+    header h1 {
+        font-size: 1.8em;
     }
 }
+
+

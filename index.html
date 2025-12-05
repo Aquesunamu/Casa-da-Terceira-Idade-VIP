@@ -1,108 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa da Terceira Idade VIP</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa da Terceira Idade VIP</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<!-- Header e Menu fixo -->
+<!-- Header fixo -->
 <header>
-    <h1>Casa da Terceira Idade VIP</h1>
+    <div class="logo">Casa da Terceira Idade VIP</div>
     <nav>
         <a href="#sobre">Sobre</a>
-        <a href="#voluntarios">Voluntários</a>
+        <a href="#projetos">Projetos</a>
         <a href="#galeria">Galeria</a>
+        <a href="#voluntarios">Voluntários</a>
         <a href="#doacoes">Doações</a>
-        <a href="#vestimentas">Vestimentas</a>
-        <a href="#financeira">Ajuda Financeira</a>
         <a href="#cadastro">Cadastro</a>
     </nav>
 </header>
 
-<main>
-    <!-- Hero Section -->
-    <section class="hero">
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay">
         <div class="hero-content">
-            <h2>Bem-vindo à Casa da Terceira Idade VIP</h2>
-            <p>Proporcionamos cuidado, atenção e qualidade de vida aos idosos em situação de vulnerabilidade.</p>
-            <a href="#cadastro" class="button">Participe Como Voluntário</a>
+            <h1>Transformando Vidas de Idosos com Amor</h1>
+            <p>Participe do nosso trabalho e ajude a trazer alegria, cuidado e conforto para os idosos.</p>
+            <a href="#cadastro" class="btn-primary">Seja Voluntário</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sobre -->
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>A Casa da Terceira Idade VIP é uma ONG dedicada a melhorar a qualidade de vida de idosos através de atividades recreativas, apoio psicológico e doações de materiais essenciais.</p>
-    </section>
+<main>
 
-    <!-- Voluntários -->
-    <section id="voluntarios">
-        <h2>Voluntários</h2>
-        <p>Seja parte do nosso time de voluntários e ajude a transformar vidas. Cada ação conta!</p>
-        <a href="#cadastro" class="button">Cadastre-se</a>
-    </section>
+<!-- Sobre -->
+<section id="sobre" class="section fade-in">
+    <h2>Sobre Nós</h2>
+    <p>A Casa da Terceira Idade VIP é uma ONG que promove qualidade de vida, atividades recreativas, doações e suporte social aos idosos em situação de vulnerabilidade.</p>
+</section>
 
-    <!-- Galeria -->
-    <section id="galeria">
-        <h2>Galeria de Fotos</h2>
-        <div class="gallery">
-            <img src="/imagens/idoso1.jpg" alt="Idoso sorrindo">
-            <img src="/imagens/idoso2.jpg" alt="Atividades recreativas">
-            <img src="/imagens/idoso3.jpg" alt="Voluntários ajudando">
+<!-- Projetos -->
+<section id="projetos" class="section fade-in">
+    <h2>Nossos Projetos</h2>
+    <div class="cards">
+        <div class="card">
+            <i class="fas fa-dumbbell fa-2x"></i>
+            <h3>Atividades Recreativas</h3>
+            <p>Jogos, música, exercícios e oficinas para manter a mente e o corpo ativos.</p>
         </div>
-    </section>
+        <div class="card">
+            <i class="fas fa-hand-holding-heart fa-2x"></i>
+            <h3>Doações</h3>
+            <p>Alimentos, roupas e produtos de higiene que fazem a diferença no dia a dia dos idosos.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-user-friends fa-2x"></i>
+            <h3>Suporte Psicológico</h3>
+            <p>Apoio emocional e social, com atenção individualizada a cada idoso.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Doações -->
-    <section id="doacoes">
-        <h2>Doações</h2>
-        <p>Contribua com alimentos, roupas e produtos de higiene. Toda ajuda faz diferença!</p>
-        <a href="#cadastro" class="button">Doe Agora</a>
-    </section>
+<!-- Galeria -->
+<section id="galeria" class="section fade-in">
+    <h2>Galeria de Fotos</h2>
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/3396202/pexels-photo-3396202.jpeg" alt="Idoso sorrindo">
+        <img src="https://images.pexels.com/photos/7520361/pexels-photo-7520361.jpeg" alt="Atividades recreativas">
+        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Voluntários ajudando">
+        <img src="https://images.pexels.com/photos/5212323/pexels-photo-5212323.jpeg" alt="Alegria nos idosos">
+    </div>
+</section>
 
-    <!-- Vestimentas -->
-    <section id="vestimentas">
-        <h2>Vestimentas</h2>
-        <p>Doamos roupas adequadas e confortáveis para nossos idosos, garantindo dignidade e cuidado.</p>
-    </section>
+<!-- Voluntários/Testemunhos -->
+<section id="voluntarios" class="section fade-in">
+    <h2>Depoimentos de Voluntários</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"Participar como voluntário trouxe um novo sentido à minha vida. Cada sorriso vale a pena!"</p>
+            <span>- Ana, voluntária</span>
+        </div>
+        <div class="testimonial">
+            <p>"A experiência de ajudar os idosos é única e muito gratificante."</p>
+            <span>- João, voluntário</span>
+        </div>
+    </div>
+</section>
 
-    <!-- Ajuda Financeira -->
-    <section id="financeira">
-        <h2>Ajuda Financeira</h2>
-        <p>Suas contribuições financeiras nos ajudam a manter projetos e melhorar o atendimento dos idosos.</p>
-        <a href="#cadastro" class="button">Contribua</a>
-    </section>
+<!-- Doações -->
+<section id="doacoes" class="section fade-in">
+    <h2>Faça sua Doação</h2>
+    <p>Contribua para manter nossos projetos ativos e trazer conforto para os idosos.</p>
+    <a href="#cadastro" class="btn-primary">Doe Agora</a>
+</section>
 
-    <!-- Cadastro -->
-    <section id="cadastro">
-        <h2>Cadastro</h2>
-        <p>Cadastre-se para receber informações sobre voluntariado, doações e eventos.</p>
-        <form>
-            <input type="text" placeholder="Nome completo" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensagem ou interesse" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+<!-- Cadastro -->
+<section id="cadastro" class="section fade-in">
+    <h2>Cadastro</h2>
+    <p>Cadastre-se para receber informações sobre voluntariado, doações e eventos.</p>
+    <form>
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem ou interesse" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
 </main>
 
 <!-- Footer -->
 <footer>
-    <p>© 2025 Casa da Terceira Idade VIP | <a href="#cadastro">Cadastre-se</a> para receber novidades</p>
+    <p>© 2025 Casa da Terceira Idade VIP | <a href="#cadastro">Cadastre-se</a> para novidades</p>
 </footer>
 
-<!-- Script para scroll suave -->
+<!-- Scripts -->
 <script>
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.3 };
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+    });
+}, appearOptions);
+
+faders.forEach(fader => appearOnScroll.observe(fader));
 </script>
 
 </body>

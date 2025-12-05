@@ -33,9 +33,38 @@ header nav a:hover { color:#FFD700; transform:scale(1.1); }
 .card i { color:#FFD700; margin-bottom:15px; }
 
 /* Galeria */
-.gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
-.gallery img { width:250px; height:180px; object-fit:cover; border-radius:12px; transition:0.3s; }
-.gallery img:hover { transform:scale(1.05); filter:brightness(1.2); }
+/* Galeria de Idosos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    width: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.gallery-item p {
+    margin-top: 8px;
+    color: #FFD700;
+    font-weight: 600;
+}
+
 
 /* Testimonials */
 .testimonials { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
@@ -59,3 +88,4 @@ footer a:hover { text-decoration:underline; }
     .hero-content h1 { font-size:2em; }
     .hero-content p { font-size:1em; }
 }
+
